@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.3",
+  "latestVersion": "1.0.4",
   "downloadUrl": "https://mrjoseki.github.io/AgroGestion-Descargas/",
-  "notes": "Avisos de actualización, cierre automático de mensajes y mejoras visuales en Fincas.",
+  "notes": "Comprobación manual de actualizaciones desde Ajustes, versión instalada visible y mejoras de legibilidad en los avisos.",
   "forceUpdate": false
 }
