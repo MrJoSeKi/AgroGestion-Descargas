@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.5",
+  "latestVersion": "1.0.6",
   "downloadUrl": "https://mrjoseki.github.io/AgroGestion-Descargas/",
-  "notes": "Corrección del menú de añadir maquinaria en Flota y mejoras en la versión y comprobación de actualizaciones.",
+  "notes": "Menú de Nueva Maquinaria más compacto y mejora del desplazamiento para evitar que se vea el contenido de detrás.",
   "forceUpdate": false
 }
