@@ -1,5 +1,6 @@
-AgroGestión 1.0.0
+AgroGestión 1.0.2 (versión estable actual)
 Identificador Android: es.agrogestion.app
 Tipo: compilación release firmada
-Instalación: abre AgroGestion-v1.0.0.apk en tu dispositivo Android y sigue las indicaciones del sistema.
-Comprobación: consulta SHA256SUMS.txt para verificar la integridad del APK.
+Instalación: abre AgroGestion-v1.0.2.apk en tu dispositivo Android y sigue las indicaciones del sistema.
+Comprobación: consulta SHA256SUMS.txt para verificar la integridad de cada APK.
+Versiones anteriores: AgroGestion-v1.0.0.apk y AgroGestion-v1.0.1.apk se conservan en este repositorio.
