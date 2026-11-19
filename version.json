@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.6",
+  "latestVersion": "1.0.7",
   "downloadUrl": "https://mrjoseki.github.io/AgroGestion-Descargas/",
-  "notes": "Menú de Nueva Maquinaria más compacto y mejora del desplazamiento para evitar que se vea el contenido de detrás.",
+  "notes": "El menú Nueva Maquinaria aprovecha el espacio vertical disponible desde debajo de la cabecera, manteniendo el ancho y el tamaño de los campos y botones.",
   "forceUpdate": false
 }
