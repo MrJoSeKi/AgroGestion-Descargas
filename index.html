@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#102d20">
   <meta name="description" content="AgroGestión reúne fincas, maquinaria, almacén, compras, cuentas e informes en una sola aplicación Android. Descarga gratis la versión 1.0.0.">
   <title>AgroGestión — La gestión del campo, más sencilla</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23102d20'/%3E%3Cpath d='M13 41h7a6 6 0 0 0 12 0h8a5 5 0 0 0 10 0h3V29l-9-3-5-11H25v14h-8v12z' fill='%23c7ed8a'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="agro-icon.svg"><link rel="apple-touch-icon" href="agro-icon.svg">
   <style>
     :root{--forest:#102d20;--forest2:#183e2b;--leaf:#c7ed8a;--cream:#f4f5ed;--ink:#17251c;--muted:#68766b;--line:#e2e8dc;--white:#fff}
     *{box-sizing:border-box}
@@ -16,8 +16,8 @@
     .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
     header{height:76px;display:flex;align-items:center;justify-content:space-between}
     .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.04em;font-size:1.15rem}
-    .brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:var(--forest)}
-    .brand-mark svg{width:29px;height:29px}
+    .brand-mark{width:44px;height:44px;border-radius:13px;display:block;overflow:hidden;flex:0 0 44px;background:transparent}
+    .brand-mark img{display:block;width:100%;height:100%;object-fit:contain}
     .nav{display:flex;align-items:center;gap:28px;font-size:.9rem;color:#536459}
     .nav a{text-decoration:none}.nav a:hover{color:var(--forest)}
     .nav-cta{padding:11px 17px;border-radius:999px;background:var(--forest);color:white!important;font-weight:750}
@@ -64,9 +64,11 @@
     .band{background:#e8eddf;border-top:1px solid #dfe6d8;border-bottom:1px solid #dfe6d8;padding:44px 0}
     .band-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}
     .band h2{font-size:1.7rem;margin:0 0 7px}.band p{margin:0;color:#647367;line-height:1.6}
-    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:30px}
-    .step{display:flex;gap:14px}.step-num{flex:0 0 38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--forest);color:var(--leaf);font-weight:900}
-    .step h3{font-size:.98rem;margin:1px 0 5px}.step p{font-size:.87rem;color:var(--muted);line-height:1.6;margin:0}
+    .steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:23px;margin-top:30px}
+    .step{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:21px;min-width:0}.step-num{flex:0 0 38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--forest);color:var(--leaf);font-weight:900}
+    .step h3{font-size:.98rem;margin:1px 0 7px}.step p{font-size:.87rem;color:var(--muted);line-height:1.65;margin:0}
+    .install-note{margin-top:24px;padding:19px 21px;border-radius:18px;background:#fff8e8;border:1px solid #f0dfb5;color:#594a2d;font-size:.88rem;line-height:1.65}
+    .install-note strong{color:#3e321e}.install-note a{font-weight:800;color:#315f3b;text-underline-offset:3px}
     .download-panel{background:var(--forest);color:white;border-radius:28px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}
     .download-panel h2{margin:0 0 9px;font-size:2.2rem}.download-panel p{color:#c5d3c6;margin:0;line-height:1.6}
     .download-panel .btn{white-space:nowrap}
@@ -81,7 +83,7 @@
   <div class="wrap">
     <header>
       <a class="brand" href="#" aria-label="AgroGestión, inicio">
-        <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M7 42h8a7 7 0 0 0 14 0h9a6 6 0 0 0 12 0h5V28l-10-3-5-12H22v15H13v14z" fill="#c7ed8a"/><circle cx="22" cy="42" r="3.5" fill="#102d20"/><circle cx="44" cy="42" r="3" fill="#102d20"/></svg></span>
+        <span class="brand-mark"><img src="agro-icon.svg" alt="Logotipo de AgroGestión"></span>
         <span>AgroGestión</span>
       </a>
       <nav class="nav"><a href="#funciones">Funciones</a><a href="#instalacion">Instalación</a><a class="nav-cta" href="#descarga">Descargar gratis</a></nav>
@@ -143,14 +145,16 @@
       </section>
 
       <section class="section" id="instalacion">
-        <div class="section-kicker">Empieza en unos minutos</div>
-        <h2>Instalar es muy sencillo.</h2>
-        <p class="section-intro">AgroGestión se distribuye mediante un instalador APK para Android.</p>
+        <div class="section-kicker">Instalación paso a paso</div>
+        <h2>Instala AgroGestión en Android.</h2>
+        <p class="section-intro">La instalación se realiza mediante un archivo APK descargado desde esta página oficial. Android puede mostrar avisos de seguridad porque la aplicación se instala fuera de Google Play.</p>
         <div class="steps">
-          <div class="step"><span class="step-num">1</span><div><h3>Descarga el APK</h3><p>Pulsa el botón de descarga y guarda el archivo en tu dispositivo Android.</p></div></div>
-          <div class="step"><span class="step-num">2</span><div><h3>Abre el archivo</h3><p>Desde Descargas o el gestor de archivos, abre AgroGestion-v1.0.0.apk.</p></div></div>
-          <div class="step"><span class="step-num">3</span><div><h3>Instala y accede</h3><p>Sigue las indicaciones de Android y entra con tu cuenta o regístrate.</p></div></div>
+          <div class="step"><span class="step-num">1</span><div><h3>Descarga el APK</h3><p>Pulsa «Descargar para Android» y espera a que termine la descarga de <strong>AgroGestion-v1.0.0.apk</strong>.</p></div></div>
+          <div class="step"><span class="step-num">2</span><div><h3>Permite esta fuente</h3><p>Abre el APK desde el navegador o desde «Mis archivos». Si Android lo solicita, pulsa «Ajustes» y activa <strong>«Permitir desde esta fuente»</strong> para esa aplicación (por ejemplo, Chrome o Mis archivos). Vuelve atrás para continuar con la instalación. No hace falta permitir instalaciones desde todas las aplicaciones.</p></div></div>
+          <div class="step"><span class="step-num">3</span><div><h3>Revisa el aviso de Play Protect</h3><p>Google Play Protect puede ofrecer analizar la aplicación por proceder de fuera de Google Play. Puedes aceptar el análisis y revisar el resultado. Si solo indica que no reconoce al desarrollador y aparece «Más detalles» y «Instalar de todas formas», continúa únicamente si has descargado el APK desde esta página oficial y deseas asumir ese riesgo.</p></div></div>
+          <div class="step"><span class="step-num">4</span><div><h3>Termina la instalación</h3><p>Pulsa «Instalar» y, cuando finalice, abre AgroGestión. Ya podrás iniciar sesión o crear tu cuenta.</p></div></div>
         </div>
+        <div class="install-note"><strong>Importante sobre tu seguridad:</strong> no desactives Google Play Protect. Si el análisis indica que la aplicación es dañina, Android la bloquea o no ofrece una opción clara para continuar, cancela la instalación. Mantén activadas las protecciones del dispositivo. Los nombres y pantallas pueden variar según la versión de Android y el fabricante. <a href="https://support.google.com/googleplay/answer/2812853?hl=es" target="_blank" rel="noopener">Información oficial sobre Google Play Protect</a>.</div>
       </section>
 
       <section class="wrap" id="descarga">
