@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#091f15"/><stop offset="1" stop-color="#1f4c2e"/></linearGradient>
+  <radialGradient id="glow"><stop stop-color="#5e9144" stop-opacity=".25"/><stop offset="1" stop-color="#5e9144" stop-opacity="0"/></radialGradient>
+  <linearGradient id="appbg" x2="0" y2="1"><stop stop-color="#b7e7b0"/><stop offset=".55" stop-color="#4b9b57"/><stop offset="1" stop-color="#123f2b"/></linearGradient>
+  <linearGradient id="leaf" x2="1" y2="1"><stop stop-color="#b9f36a"/><stop offset=".5" stop-color="#3d9b42"/><stop offset="1" stop-color="#14532d"/></linearGradient>
+  <linearGradient id="sun" x2="0" y2="1"><stop stop-color="#fff5b7"/><stop offset="1" stop-color="#f5b942"/></linearGradient>
+  <clipPath id="app-rounded"><rect x="18" y="18" width="476" height="476" rx="98"/></clipPath>
+</defs>
+<rect width="1200" height="630" fill="url(#bg)"/>
+<circle cx="1030" cy="80" r="440" fill="url(#glow)"/>
+<g fill="none" stroke="#c7ed8a" stroke-opacity=".09">
+  <circle cx="955" cy="315" r="185"/><circle cx="955" cy="315" r="260"/><circle cx="955" cy="315" r="335"/>
+</g>
+<rect x="594" y="105" width="4" height="420" rx="2" fill="#c7ed8a" fill-opacity=".55"/>
+<!-- Logotipo original de AgroGestión -->
+<g transform="translate(76 111) scale(.72)">
+  <rect width="512" height="512" rx="112" fill="#0c3b29"/>
+  <g clip-path="url(#app-rounded)">
+    <rect x="18" y="18" width="476" height="476" fill="url(#appbg)"/>
+    <circle cx="372" cy="145" r="54" fill="url(#sun)"/>
+    <path d="M18 292 Q120 190 225 276 T494 258 V494 H18Z" fill="#477f3d"/>
+    <path d="M18 336 Q140 250 256 322 T494 300 V494 H18Z" fill="#245f36"/>
+    <path d="M18 386 Q140 318 256 370 T494 356 V494 H18Z" fill="#17492f"/>
+    <g fill="none" stroke="#a9d66c" stroke-width="9" stroke-linecap="round" opacity=".9">
+      <path d="M42 438 Q160 370 278 420"/><path d="M72 472 Q188 406 310 450"/><path d="M265 434 Q365 382 468 418"/>
+    </g>
+    <path d="M256 356 C246 267 180 222 114 214 C119 293 177 352 256 356Z" fill="url(#leaf)" stroke="#e0ff9b" stroke-width="8"/>
+    <path d="M256 356 C260 255 321 183 405 166 C405 267 343 343 256 356Z" fill="url(#leaf)" stroke="#e0ff9b" stroke-width="8"/>
+    <path d="M256 357 Q244 282 171 239 M256 357 Q289 260 374 193" fill="none" stroke="#eaffc5" stroke-width="7" stroke-linecap="round"/>
+    <path d="M256 357 Q256 392 256 422" fill="none" stroke="#eaffc5" stroke-width="10" stroke-linecap="round"/>
+    <g fill="#d6f47b"><circle cx="91" cy="370" r="19"/><circle cx="130" cy="389" r="16"/><circle cx="164" cy="371" r="14"/></g>
+    <g fill="#7b4a9c"><circle cx="360" cy="382" r="17"/><circle cx="392" cy="396" r="16"/><circle cx="421" cy="375" r="15"/></g>
+    <path d="M302 395 q22 -36 38 -64 q7 40 -17 69" fill="#e7bd4e"/>
+    <path d="M302 395 l-12 -28 m25 10 l-5 -29 m19 5 l-1 -27" stroke="#fff0a4" stroke-width="8" stroke-linecap="round"/>
+    <path d="M48 456 Q256 420 464 456" fill="none" stroke="#b6ec68" stroke-width="9" stroke-linecap="round"/>
+  </g>
+</g>
+<rect x="660" y="132" width="290" height="46" rx="23" fill="#c7ed8a"/>
+<circle cx="682" cy="155" r="6" fill="#183e2b"/>
+<text x="703" y="162" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="1.2" fill="#183e2b">APLICACIÓN ANDROID</text>
+<text x="653" y="284" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-2" fill="#fafcf4">AgroGestión</text>
+<rect x="658" y="312" width="132" height="7" rx="3.5" fill="#c7ed8a"/>
+<text x="655" y="382" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#e0ebdc">La gestión del campo,</text>
+<text x="655" y="425" font-family="Arial, Helvetica, sans-serif" font-size="30" fill="#e0ebdc">más sencilla.</text>
+<text x="655" y="490" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#c1d3be">Fincas · Flota · Almacén · Compras · Cuentas</text>
+<rect x="1002" y="525" width="148" height="44" rx="22" fill="#c7ed8a"/>
+<text x="1022" y="553" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#12361f">VERSIÓN 1.0</text>
+</svg>
