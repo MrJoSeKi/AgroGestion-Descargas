@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.8",
+  "latestVersion": "1.0.9",
   "downloadUrl": "https://mrjoseki.github.io/AgroGestion-Descargas/",
-  "notes": "Se amplía el margen inferior del menú Nueva maquinaria y el título permanece fijo mientras se desplaza su contenido.",
+  "notes": "El menú Añadir maquinaria adopta el mismo tamaño y formato que Añadir finca, con desplazamiento interno y conservando los colores de aceites y capacidades.",
   "forceUpdate": false
 }
