@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102d20">
+  <meta name="description" content="AgroGestión reúne fincas, maquinaria, almacén, compras, cuentas e informes en una sola aplicación Android. Descarga gratis la versión 1.0.0.">
+  <title>AgroGestión — La gestión del campo, más sencilla</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23102d20'/%3E%3Cpath d='M13 41h7a6 6 0 0 0 12 0h8a5 5 0 0 0 10 0h3V29l-9-3-5-11H25v14h-8v12z' fill='%23c7ed8a'/%3E%3C/svg%3E">
+  <style>
+    :root{--forest:#102d20;--forest2:#183e2b;--leaf:#c7ed8a;--cream:#f4f5ed;--ink:#17251c;--muted:#68766b;--line:#e2e8dc;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    a{color:inherit}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:-.04em;font-size:1.15rem}
+    .brand-mark{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:var(--forest)}
+    .brand-mark svg{width:29px;height:29px}
+    .nav{display:flex;align-items:center;gap:28px;font-size:.9rem;color:#536459}
+    .nav a{text-decoration:none}.nav a:hover{color:var(--forest)}
+    .nav-cta{padding:11px 17px;border-radius:999px;background:var(--forest);color:white!important;font-weight:750}
+    .hero{position:relative;overflow:hidden;border-radius:32px;background:radial-gradient(circle at 84% 18%,rgba(199,237,138,.18),transparent 28%),linear-gradient(125deg,#0b2418,#173e2b 72%,#23543a);color:white;padding:76px 70px;min-height:485px;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:30px;box-shadow:0 24px 65px rgba(16,45,32,.16)}
+    .hero:after{content:"";position:absolute;width:470px;height:470px;border:1px solid rgba(199,237,138,.12);border-radius:50%;right:-120px;bottom:-275px;box-shadow:0 0 0 45px rgba(199,237,138,.025),0 0 0 90px rgba(199,237,138,.02)}
+    .eyebrow{display:inline-flex;gap:9px;align-items:center;border:1px solid rgba(199,237,138,.3);border-radius:999px;padding:8px 12px;color:var(--leaf);font-size:.76rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+    .dot{width:7px;height:7px;background:var(--leaf);border-radius:50%;box-shadow:0 0 12px var(--leaf)}
+    h1{font-size:clamp(2.8rem,5vw,4.7rem);letter-spacing:-.065em;line-height:.99;margin:22px 0 18px;max-width:630px}
+    h1 span{color:var(--leaf)}
+    .hero-copy{color:#d0ddd0;font-size:1.08rem;line-height:1.7;max-width:540px;margin:0}
+    .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;text-decoration:none;border-radius:999px;padding:15px 21px;font-weight:850;font-size:.94rem;transition:transform .18s,box-shadow .18s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--leaf);color:#17321f;box-shadow:0 9px 22px rgba(0,0,0,.17)}
+    .btn-secondary{border:1px solid rgba(255,255,255,.24);color:white}
+    .hero-note{font-size:.77rem;color:#b7c9b9;margin-top:15px}
+    .device-area{position:relative;min-height:320px;display:grid;place-items:center;z-index:1}
+    .halo{position:absolute;width:300px;height:300px;border-radius:50%;background:rgba(199,237,138,.11);filter:blur(2px)}
+    .phone{position:relative;width:218px;height:355px;border:7px solid #0b1710;border-radius:34px;background:#f2f5ec;box-shadow:0 28px 55px rgba(0,0,0,.36);padding:13px 11px;color:#203627;transform:rotate(5deg)}
+    .phone-notch{width:65px;height:12px;border-radius:0 0 10px 10px;background:#0b1710;margin:-13px auto 15px}
+    .screen-head{background:linear-gradient(120deg,#16462e,#28734a);border-radius:17px;padding:17px 12px;color:white}
+    .screen-head small{font-size:8px;letter-spacing:.16em;color:#c8e8bb;font-weight:800}
+    .screen-head strong{display:block;font-size:18px;margin-top:8px;letter-spacing:-.04em}
+    .screen-head span{font-size:8px;color:#d3e4d0}
+    .screen-title{font-size:10px;font-weight:850;margin:16px 3px 8px}
+    .screen-grid{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+    .screen-card{background:white;border:1px solid #e4e9df;border-radius:11px;padding:10px 7px;min-height:67px}
+    .screen-card i{font-style:normal;font-size:17px}
+    .screen-card b{display:block;font-size:9px;margin-top:5px}
+    .screen-card small{font-size:7px;color:#829084}
+    .screen-bottom{margin-top:10px;background:#e1efd5;border-radius:10px;padding:9px;font-size:8px;font-weight:800;color:#31563b}
+    .float-chip{position:absolute;background:white;color:#24432d;border-radius:14px;padding:12px 15px;box-shadow:0 12px 30px rgba(0,0,0,.18);font-size:.78rem;font-weight:850}
+    .float-chip small{display:block;color:#7b887e;font-size:.66rem;font-weight:600;margin-top:3px}
+    .chip-one{top:31px;right:-1px;transform:rotate(4deg)}.chip-two{bottom:29px;left:-8px;transform:rotate(-5deg)}
+    .section{padding:88px 0}
+    .section-kicker{color:#638047;font-size:.75rem;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+    h2{font-size:clamp(2rem,3.5vw,3rem);letter-spacing:-.055em;line-height:1.06;margin:13px 0 14px}
+    .section-intro{color:var(--muted);line-height:1.7;max-width:610px;margin:0}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:34px}
+    .feature{background:white;border:1px solid var(--line);border-radius:22px;padding:25px;min-height:190px;box-shadow:0 8px 25px rgba(29,55,35,.035)}
+    .feature-icon{width:46px;height:46px;border-radius:15px;display:grid;place-items:center;background:#edf5e5;font-size:1.35rem}
+    .feature h3{font-size:1.05rem;margin:17px 0 7px;letter-spacing:-.025em}
+    .feature p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.6}
+    .band{background:#e8eddf;border-top:1px solid #dfe6d8;border-bottom:1px solid #dfe6d8;padding:44px 0}
+    .band-inner{display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .band h2{font-size:1.7rem;margin:0 0 7px}.band p{margin:0;color:#647367;line-height:1.6}
+    .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:25px;margin-top:30px}
+    .step{display:flex;gap:14px}.step-num{flex:0 0 38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--forest);color:var(--leaf);font-weight:900}
+    .step h3{font-size:.98rem;margin:1px 0 5px}.step p{font-size:.87rem;color:var(--muted);line-height:1.6;margin:0}
+    .download-panel{background:var(--forest);color:white;border-radius:28px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+    .download-panel h2{margin:0 0 9px;font-size:2.2rem}.download-panel p{color:#c5d3c6;margin:0;line-height:1.6}
+    .download-panel .btn{white-space:nowrap}
+    footer{padding:30px 0 42px;color:#758176;font-size:.8rem}
+    .footer-inner{display:flex;justify-content:space-between;gap:20px;align-items:center;border-top:1px solid var(--line);padding-top:24px}
+    .footer-brand{font-weight:850;color:var(--forest)}
+    @media(max-width:800px){.hero{padding:52px 35px;grid-template-columns:1fr;gap:4px}.device-area{min-height:340px}.features{grid-template-columns:repeat(2,1fr)}.band-inner,.download-panel{align-items:flex-start;flex-direction:column}.steps{grid-template-columns:1fr}.section{padding:65px 0}}
+    @media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}header{height:68px}.nav a:not(.nav-cta){display:none}.hero{padding:38px 23px 28px;border-radius:24px;min-height:auto}h1{font-size:3.1rem}.hero-copy{font-size:.98rem}.device-area{min-height:335px}.phone{transform:scale(.92) rotate(5deg)}.chip-one{right:-5px}.chip-two{left:-3px}.features{grid-template-columns:1fr}.feature{min-height:0}.band{padding:34px 0}.download-panel{padding:30px 23px;border-radius:23px}.download-panel h2{font-size:1.8rem}.footer-inner{align-items:flex-start;flex-direction:column}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#" aria-label="AgroGestión, inicio">
+        <span class="brand-mark"><svg viewBox="0 0 64 64" aria-hidden="true"><path d="M7 42h8a7 7 0 0 0 14 0h9a6 6 0 0 0 12 0h5V28l-10-3-5-12H22v15H13v14z" fill="#c7ed8a"/><circle cx="22" cy="42" r="3.5" fill="#102d20"/><circle cx="44" cy="42" r="3" fill="#102d20"/></svg></span>
+        <span>AgroGestión</span>
+      </a>
+      <nav class="nav"><a href="#funciones">Funciones</a><a href="#instalacion">Instalación</a><a class="nav-cta" href="#descarga">Descargar gratis</a></nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <div class="eyebrow"><span class="dot"></span> Versión 1.0 · Android</div>
+          <h1>La gestión del campo, <span>más sencilla.</span></h1>
+          <p class="hero-copy">Fincas, maquinaria, almacén, compras y cuentas. Todo organizado en una sola aplicación para tener tu explotación siempre a mano.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://raw.githubusercontent.com/MrJoSeKi/AgroGestion-Descargas/main/AgroGestion-v1.0.0.apk" download>
+              <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Descargar para Android
+            </a>
+            <a class="btn btn-secondary" href="#funciones">Conocer funciones</a>
+          </div>
+          <p class="hero-note">Descarga gratuita · Archivo APK · Versión estable 1.0.0</p>
+        </div>
+        <div class="device-area" aria-label="Vista ilustrativa de la aplicación">
+          <div class="halo"></div>
+          <div class="phone">
+            <div class="phone-notch"></div>
+            <div class="screen-head"><small>AGROGESTIÓN</small><strong>Tu explotación,<br>en orden.</strong><span>Resumen de actividad</span></div>
+            <div class="screen-title">Accesos principales</div>
+            <div class="screen-grid">
+              <div class="screen-card"><i>🌱</i><b>Fincas</b><small>Parcelas y SIGPAC</small></div>
+              <div class="screen-card"><i>🚜</i><b>Flota</b><small>Maquinaria</small></div>
+              <div class="screen-card"><i>📦</i><b>Almacén</b><small>Inventario</small></div>
+              <div class="screen-card"><i>🧾</i><b>Compras</b><small>Registros</small></div>
+            </div>
+            <div class="screen-bottom">Todo lo importante, a mano</div>
+          </div>
+          <div class="float-chip chip-one">🌿 Organización<small>Una visión más clara</small></div>
+          <div class="float-chip chip-two">📍 Tus fincas<small>Acceso al visor SIGPAC</small></div>
+        </div>
+      </section>
+
+      <section class="section" id="funciones">
+        <div class="section-kicker">Una herramienta para el día a día</div>
+        <h2>Todo lo que necesitas,<br>en un mismo lugar.</h2>
+        <p class="section-intro">AgroGestión reúne las áreas principales de tu explotación para que puedas consultar y gestionar la información desde tu móvil.</p>
+        <div class="features">
+          <article class="feature"><div class="feature-icon">🌱</div><h3>Fincas y SIGPAC</h3><p>Organiza tus fincas y accede al visor SIGPAC desde cada ficha.</p></article>
+          <article class="feature"><div class="feature-icon">🚜</div><h3>Flota y maquinaria</h3><p>Ten localizados tus vehículos, sus características y fotografías.</p></article>
+          <article class="feature"><div class="feature-icon">📦</div><h3>Almacén e inventario</h3><p>Consulta y organiza los artículos y recursos de tu explotación.</p></article>
+          <article class="feature"><div class="feature-icon">🧾</div><h3>Compras</h3><p>Registra y consulta las compras de forma ordenada.</p></article>
+          <article class="feature"><div class="feature-icon">💶</div><h3>Cuentas e informes</h3><p>Revisa la información económica y consulta tus informes.</p></article>
+          <article class="feature"><div class="feature-icon">☁️</div><h3>Tu cuenta</h3><p>Accede con correo y contraseña o con tu cuenta de Google.</p></article>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="wrap band-inner">
+          <div><h2>Diseñada para llevarla contigo.</h2><p>Consulta la información de tu explotación directamente desde tu dispositivo Android.</p></div>
+          <a class="btn" style="background:#173d29;color:#fff" href="#descarga">Descargar AgroGestión <span aria-hidden="true">→</span></a>
+        </div>
+      </section>
+
+      <section class="section" id="instalacion">
+        <div class="section-kicker">Empieza en unos minutos</div>
+        <h2>Instalar es muy sencillo.</h2>
+        <p class="section-intro">AgroGestión se distribuye mediante un instalador APK para Android.</p>
+        <div class="steps">
+          <div class="step"><span class="step-num">1</span><div><h3>Descarga el APK</h3><p>Pulsa el botón de descarga y guarda el archivo en tu dispositivo Android.</p></div></div>
+          <div class="step"><span class="step-num">2</span><div><h3>Abre el archivo</h3><p>Desde Descargas o el gestor de archivos, abre AgroGestion-v1.0.0.apk.</p></div></div>
+          <div class="step"><span class="step-num">3</span><div><h3>Instala y accede</h3><p>Sigue las indicaciones de Android y entra con tu cuenta o regístrate.</p></div></div>
+        </div>
+      </section>
+
+      <section class="wrap" id="descarga">
+        <div class="download-panel">
+          <div><div class="section-kicker" style="color:#c7ed8a">AgroGestión 1.0.0</div><h2>Empieza hoy mismo.</h2><p>Descarga gratuita para Android. El instalador corresponde a la versión estable 1.0.0.</p></div>
+          <a class="btn btn-primary" href="https://raw.githubusercontent.com/MrJoSeKi/AgroGestion-Descargas/main/AgroGestion-v1.0.0.apk" download>↓&nbsp; Descargar APK</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner"><div><div class="footer-brand">AgroGestión</div><div>La gestión del campo, más sencilla.</div></div><div>Versión 1.0.0 · Android · Distribución gratuita</div></div>
+    </footer>
+  </div>
+</body>
+</html>
