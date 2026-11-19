@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.4",
+  "latestVersion": "1.0.5",
   "downloadUrl": "https://mrjoseki.github.io/AgroGestion-Descargas/",
-  "notes": "Puedes instalar la actualización ahora o dejarla para más tarde. También podrás comprobar si hay nuevas versiones desde el apartado Ajustes.",
+  "notes": "Corrección del menú de añadir maquinaria en Flota y mejoras en la versión y comprobación de actualizaciones.",
   "forceUpdate": false
 }
