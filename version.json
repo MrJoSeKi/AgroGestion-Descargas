@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.9",
+  "latestVersion": "1.0.10",
   "downloadUrl": "https://mrjoseki.github.io/AgroGestion-Descargas/",
-  "notes": "El menú Añadir maquinaria adopta el mismo tamaño y formato que Añadir finca, con desplazamiento interno y conservando los colores de aceites y capacidades.",
+  "notes": "Se corrige el buscador de Proveedores y compras, se reorganizan Proveedores e Historial de compras en apartados desplegables, se actualizan las categorías de productos necesarios para cada finca y se mejora la navegación con el botón Atrás de Android.",
   "forceUpdate": false
 }
