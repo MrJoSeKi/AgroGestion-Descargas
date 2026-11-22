@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.11",
-  "downloadUrl": "https://mrjoseki.github.io/AgroGestion-Descargas/",
-  "notes": "Se retira temporalmente la integración experimental del botón Atrás y se recupera la navegación anterior. Se mantienen las mejoras del buscador y los apartados desplegables de Proveedores y Compras, así como el catálogo compartido de productos por finca.",
+  "latestVersion": "1.0.38",
+  "downloadUrl": "https://github.com/MrJoSeKi/AgroGestion-Descargas/releases/download/v1.0.38/AgroGestion-v1.0.38.apk",
+  "notes": "Se unifica el escáner de códigos de barras con el buscador del Almacén y se elimina el botón Escanear independiente.",
   "forceUpdate": false
 }
