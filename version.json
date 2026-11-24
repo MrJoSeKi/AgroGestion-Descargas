@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.58",
-  "downloadUrl": "https://github.com/MrJoSeKi/AgroGestion-Descargas/releases/download/v1.0.58/AgroGestion-v1.0.58.apk",
-  "notes": "Mejoras en el historial de compras al escanear productos, colores por categoría en mantenimientos y validaciones adicionales.",
+  "latestVersion": "1.0.62",
+  "downloadUrl": "https://github.com/MrJoSeKi/AgroGestion-Descargas/releases/download/v1.0.62/AgroGestion-v1.0.62.apk",
+  "notes": "Mejoras en los selectores de categorías de gastos e ingresos, nombres de productos en Almacén e historiales y referencias de artículos vinculados a maquinaria.",
   "forceUpdate": false
 }
