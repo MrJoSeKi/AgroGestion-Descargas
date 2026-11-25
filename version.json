@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.69",
-  "downloadUrl": "https://github.com/MrJoSeKi/AgroGestion-Descargas/releases/download/v1.0.69/AgroGestion-v1.0.69.apk",
-  "notes": "Mejoras en el widget del tiempo, navegación atrás en Android, iconos del panel y menú, ajustes visuales en Economía y mejoras en el apartado de mantenimientos antiguos de Flota.",
+  "latestVersion": "1.0.70",
+  "downloadUrl": "https://github.com/MrJoSeKi/AgroGestion-Descargas/releases/download/v1.0.70/AgroGestion-v1.0.70.apk",
+  "notes": "Mejoras en la navegación hacia atrás desde Inicio en Android y nuevo diseño simplificado del icono del reloj de Historial de actividad.",
   "forceUpdate": false
 }
