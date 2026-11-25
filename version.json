@@ -1,6 +1,6 @@
 {
-  "latestVersion": "1.0.68",
-  "downloadUrl": "https://github.com/MrJoSeKi/AgroGestion-Descargas/releases/download/v1.0.68/AgroGestion-v1.0.68.apk",
-  "notes": "Ajuste visual de márgenes y alineación en Proveedores y Compras, sin modificar su funcionamiento.",
+  "latestVersion": "1.0.69",
+  "downloadUrl": "https://github.com/MrJoSeKi/AgroGestion-Descargas/releases/download/v1.0.69/AgroGestion-v1.0.69.apk",
+  "notes": "Mejoras en el widget del tiempo, navegación atrás en Android, iconos del panel y menú, ajustes visuales en Economía y mejoras en el apartado de mantenimientos antiguos de Flota.",
   "forceUpdate": false
 }
